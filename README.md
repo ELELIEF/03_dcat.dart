@@ -16,15 +16,16 @@
 dart pub get
 
 ## 使用方法
-dart run [dcat.dart]  [options] <file_paths>
 
 运行以下命令来使用 dcat：
+dart run [dcat.dart]  [options] <file_paths>
 
 参数
 <file_paths>：要读取的文件路径，可以是多个文件。
 -n 或 --line-number：显示行号。
 
 ## 使用示例1
+
 输出文件内容：
 dart run [dcat.dart] example.txt
 输出文件内容并显示行号：
@@ -33,10 +34,12 @@ dart run [dcat.dart] -n example.txt
 echo "Hello, World!" | dart run [dcat.dart]
 
 ## 错误处理
+
 如果指定的路径是一个目录，dcat 会输出错误信息。
 如果文件无法读取，程序会返回退出代码 2。
 
 ## 修改说明
+
 新增参数：
 添加了 --write（简称 -r）选项，用于指定要写入的内容。
 
@@ -48,6 +51,7 @@ echo "Hello, World!" | dart run [dcat.dart]
 WriteFile 函数会将内容追加到 output.txt 文件中。
 
 ## 使用示例2
+
 写入内容到文件：
 dart run dcat.dart -r "Hello, World!"
 
