@@ -18,7 +18,7 @@ dart pub get
 ## 使用方法
 
 运行以下命令来使用 dcat：
-dart run dcat.dart -n file_path
+dart run [dcat.dart]  [options] <file_paths>
 
 参数
 file_path：要读取的文件路径，可以是多个文件。
